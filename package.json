@@ -1,9 +1,9 @@
 {
-  "name": "@matz3/coverage-threshold-exit-code",
+  "name": "@matz3/issue-karma-coverage-threshold-exit-code",
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "npm explore karma -- npm i --only=dev && npm explore karma -- npm run build",
+    "postinstall": "npm explore karma -- npm install && npm explore karma -- npm run build",
     "test": "node start.js"
   },
   "devDependencies": {
