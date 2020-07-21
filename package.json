@@ -1,0 +1,14 @@
+{
+  "name": "@matz3/coverage-threshold-exit-code",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "npm explore karma -- npm i --only=dev && npm explore karma -- npm run build",
+    "test": "node start.js"
+  },
+  "devDependencies": {
+    "karma": "github:matz3/karma#feat-server-exit-listener-set-exit-code",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "github:matz3/karma-coverage#fix-exit-code"
+  }
+}
